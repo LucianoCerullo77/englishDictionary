@@ -28,3 +28,21 @@ body {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
+
+.heading {
+  font-size: 2rem;
+}
+
+.inputSearch {
+  height: 2.5rem;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
