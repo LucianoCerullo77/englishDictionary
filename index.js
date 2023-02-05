@@ -20,6 +20,7 @@ const fetchAPI = async (word) => {
     if (result.title) {
       // No Results found
       meaningContainer.style.display = "block";
+      infoText.style.display = "none";
       wordTitle.innerText = word;
       meaningTitle.innerText = "Not Found";
       audio.style.display = "none";
@@ -35,7 +36,7 @@ const fetchAPI = async (word) => {
       audio.src = result[0].phonetics[0].audio;
     }
   } catch (err) {
-    console.log(err);
+    infoText.innerText = "An error happened :(. Try again later!";
   }
 };
 
