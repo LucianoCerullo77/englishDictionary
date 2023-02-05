@@ -7,8 +7,15 @@ const audio = document.getElementById("audio");
 
 const fetchAPI = async (word) => {
   try {
+    infoText.style.display = "block";
+    meaningContainer.style.display = "none";
+    infoText.innerText = `Searching the meaning of "${word}"`;
+
     const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     const result = await fetch(URL).then((res) => res.json());
+
+    infoText.style.display = "none";
+    meaningContainer.style.display = "block";
   } catch (err) {
     console.log(err);
   }
