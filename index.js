@@ -16,6 +16,8 @@ const fetchAPI = async (word) => {
 
     infoText.style.display = "none";
     meaningContainer.style.display = "block";
+    wordTitle.innerText = result[0].word;
+    meaningTitle.innerText = result[0].meanings[0].definitions[0].definition;
   } catch (err) {
     console.log(err);
   }
